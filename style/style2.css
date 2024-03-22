@@ -1,0 +1,369 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+html { font-size: 22px; }
+
+body { 
+  font-family: 'Roboto', sans-serif;
+
+}
+header {
+  background-color: #1D1D1D;
+}
+a {
+  color: inherit;
+}
+
+nav {
+  top: 0%;
+  width: 100%;
+  background-color: #1d1d1d;
+}
+.fa-navicon {
+  color:#CC4949;
+  font-size: 34px;
+  position: relative;
+  top: 4px;
+}
+.custom-toggler.navbar-toggler {
+  border-color: #CC4949;
+}
+.container {
+  padding: 22px;
+  margin: 0 auto;
+  text-align: center;
+}
+.nav-link {
+  transition: 0.3s;
+}
+.nav-link:hover {
+  transform: scale(1.1);
+  color: rgb(255, 0, 0) !important;
+}
+.container ul li a {
+  margin: 8px;
+  padding: 10px;
+  color: #fff;
+  font-size: 1.2em;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+.active {
+  border-bottom: 2px solid #d0d7d9;
+}
+.titre{    
+color: rgb(193, 45, 45);
+font-weight: 700;
+font-size: 4em;
+}
+.logo{ 
+  width: 7rem;
+}
+
+.bienvenue{
+  text-align: center;
+  color: rgb(0, 251, 255);
+  font-size: 3em;
+  margin-top: 254px;
+}
+
+.font{
+  background-color: rgb(45, 45, 45);
+}
+
+#projet{
+  color: rgb(0, 94, 255);
+  font-size: 2em;
+  text-align: center;
+}
+
+#skills{
+  color: rgb(0, 94, 255);
+  text-align: center;
+  margin-bottom: 0rem;
+}
+
+#contact{
+  color: rgb(0, 94, 255);
+  font-size: 2em;
+  text-align: center;
+}
+
+#formation{
+  color: rgb(0, 94, 255);
+  font-size: 2em;
+  text-align: center;
+}
+
+
+
+
+ 
+.projet1 {
+  font-size: medium;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 2em;
+  width: 60%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+
+
+.card {
+  margin-top: 7%;
+  margin-bottom: 4%;
+  border: 5px solid rgb(91, 91, 91);
+  background-color: rgb(31, 31, 31);
+  color: rgb(19, 63, 165);
+  padding: 1rem;
+  height: 6rem;
+}
+
+.cards {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+
+
+
+
+p {
+  word-break:break-all;
+  font-size: 12pt;
+}
+
+
+
+
+.card2 {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border: 5px solid rgb(4, 147, 116);
+  background-color: rgb(68, 68, 68);
+  color: rgb(240, 0, 0);
+  padding: 1rem;
+  height: 2rem;
+  }
+  
+.cards2 {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: inline;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  
+}
+
+ 
+
+
+form { max-width:420px;  }
+
+.feedback-input {
+  color:white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #01a479;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #CC4949; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#014768;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#00425a; }
+
+.center-logo{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.azerty {
+  background-image: url("reza.jpg");  
+  margin-top: -11px ;
+  background-color: #cccccc;
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; 
+  background-attachment: fixed;
+}
+
+@media screen and (max-width:560px) {
+  .titre{    
+    color: rgb(193, 45, 45);
+    font-weight: 700;
+    font-size: 2.5em;
+  }
+  .logo{ 
+    width: 4rem;
+  }  
+  .bienvenue {
+    margin-top: 250px;
+  }
+}
+/**/
+.fonte{
+  background-image: url("rty.jpeg");  
+  background-color: #cccccc;
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; 
+  background-attachment: fixed;
+}
+
+section{
+  background-image: url("section.png"); 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; 
+  background-attachment: fixed;
+}
+
+.imagg{
+  background-image: url("zerty.jpeg");  
+  margin-top: -11px;
+  background-color: #cccccc;
+  height: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; 
+  background-attachment: fixed;
+}
+
+.imageskill{
+  background-image: url("skill.jpg");  
+  margin-top: -22px;
+  background-color: #cccccc;
+  height: 420px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; 
+  background-attachment: fixed;
+}
+
+.imagecontact{
+  background-image: url("contact.jpg");  
+  margin-top: -11px;
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; 
+  background-attachment: fixed;
+}
+
+.couleur{
+  background-color: #2b2b2b;
+}
+
+.check{
+  color: #cccccc;
+}
+
+:root {
+  --error-color: #dc3545;
+  --success-color: #28a745;
+  --warning-color: #ffc107;
+  }
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  body {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 16px;
+      background-color: #ff0000;
+      min-height: 100vh;
+      margin: 0;
+  }
+  .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1em;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      width: 600px;
+  }
+  .form {
+      padding: 10px 20px;
+  }
+  .form h1 {
+      font-size: 1.5em;
+      text-align: center;
+      margin-bottom: 20px;
+  }
+  .form-field {
+      margin-bottom: 5px;
+  }
+  .form-field label {
+      display: block;
+      color: rgb(255, 255, 255);
+      margin-bottom: 5px;
+  }
+  .form-field input, .form-field select {
+      border: solid 2px #f0f0f0;
+      border-radius: 3px;
+      padding: 10px;
+      margin-bottom: 5px;
+      font-size: 14px;
+      display: block;
+      width: 100%;
+  }
+  .form-field input:focus, .form-field select:focus {
+      outline: none;
+  }
+  .form-field.error input {
+      border-color: var(--error-color);
+  }
+  .form-field.success input {
+      border-color: var(--success-color);
+  }
+  .form-field small {
+      color: var(--error-color);
+  }
