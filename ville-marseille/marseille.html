@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="marseille.css">
+    <link rel="icon" href="image/blason-marseille.jpg">
+    <title>La Ville de Marseille</title>
+</head>
+<body>
+    <section class="element">
+        <label class="menu">
+            <input type="checkbox" />
+        </label>
+
+        <section class="navbar">
+            <header>Menu</header>
+              <ul class="nav-links">
+                <li class="link"><a href="marseille.html"><i class="fa-solid fa-house"></i> Accueil</a></li>
+                <li class="link"><a href="histoire/marseille2.html"><i class="fa-solid fa-timeline"></i> Histoire</a></li>
+                <li class="link"><a href="randonnée/marseille3.html"><i class="fa-solid fa-person-hiking"></i> Randonnées</a></li>
+                <li class="link"><a href="plage/marseille4.html"><i class="fa-solid fa-umbrella-beach"></i> Plages</a></li>
+                <li class="link"><a href="parc/marseille5.html"><i class="fa-solid fa-tree"></i> Parcs</a></li>
+                <li class="link"><a href="musée/marseille6.html"><i class="fa-solid fa-building-columns"></i> Musées</a></li>
+                <li class="link"><a href="contact/marseille7.html"><i class="fa-solid fa-comments"></i> Contact</a></li>
+            </ul>
+        </section>
+    </section>
+
+    <a class="bouton" href="contact/contact.html"><i class="fa-solid fa-envelope"></i></a>
+
+    <section class="fond">
+        <img src="image/marseille.jpg" alt="">
+    </section>
+
+    <section class="Actualités">
+        <h1>Actualités</h1>
+        <div class="articles">
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide" style="background-color: #3498db;">
+                        <img src="image/marche.png" alt="">
+                        <div>
+                            <h2>Nouveau : un marché alimentaire sur le Vieux-Port chaque dimanche matin</h2>
+                            <p>Depuis le 12 novembre , la Ville de Marseille installe un nouveau marché alimentaire tous les dimanches matin de 8h à 13h sur le Vieux-Port.
+                                Ce marché inédit prend place quai de la Fraternité, de l'Ombrière à la Samaritaine et compte une trentaine d'étals de produits de qualité et de saison issus de filières en circuit court<span id="dots1">...</span><span id="more1">
+                                Les nouveaux exposants proposeront fruits, légumes, fromages, charcuteries et viandes, produits de la mer, épices et plantes aromatiques, boissons, pain, plats cuisinés, etc
+                                Des espaces "fooding", sous forme de food-trucks, seront également installés en plus de l’habituel marché aux poissons.
+                                Engagée pour mettre en valeur la diversité des productions agricoles et de la gastronomie méditerranéennes tout en faisant de ce dispositif inédit un rendez-vous hebdomadaire pour toutes et tous,
+                                la Ville de Marseille organisera également sur le marché des animations, des conférences et des ateliers de cuisine.
+                                </span>
+                            </p>
+                            <button onclick="myFunction('dots1', 'more1', 'myBtn1')" id="myBtn1">En savoir plus</button>
+                        </div>
+                    </div>
+                    <div class="slide" style="background-color: #2ecc71;">
+                        <img src="image/culture.png" alt="">
+                        <div>
+                            <h2>"Baya. Une héroïne algérienne de l'art moderne" au Centre de la Vieille Charité</h2>
+                            <p>Les musées de la Ville de Marseille et l’Institut du monde arabe se sont associés pour présenter l’exposition évènement "Baya. Une héroïne algérienne de l'art moderne"<span id="dots2">...</span><span id="more2">
+                                Ce projet monographique de grande ampleur est dédié à l’œuvre de l’artiste algérienne Fatma Haddad (Bordj E-Kiffan, 1931 - Blida, 1998) internationalement connue aujourd’hui sous le pseudonyme de Baya.
+                                Après sa présentation à l’Institut du monde arabe à Paris, cette exposition connaît une seconde étape, augmentée de plusieurs œuvres et documents, au Centre de la Vieille Charité de Marseille du 13 mai au 26 novembre 2023.
+                                </span>
+                            </p>
+                            <button onclick="myFunction('dots2', 'more2', 'myBtn2')"  id="myBtn2">En savoir plus</button>
+                        </div>
+                    </div>
+                    <div class="slide" style="background-color: #e74c3c;">
+                        <img src="image/sport.jpg" alt="">
+                        <div>
+                            <h2>La Ville de Marseille s'engage pour l'Olympiade Culturelle</h2>
+                            <p>L’Olympiade Culturelle est une programmation artistique et culturelle pluridisciplinaire qui se déploie en amont des Jeux Olympiques et Paralympiques. En 2024, la Ville de Marseille accueillera la Flamme Olympique et sera hôte des épreuves sportives de football et de dix disciplines de voile. L’Olympiade Culturelle permet d’explorer les liens entre l’art et le sport, mais aussi leurs valeurs communes comme l’amitié, le respect, l’excellence, l’inclusion, la diversité culturelle, l’universalisme.<span id="dots3">...</span><span id="more3">
+                                L’Olympiade Culturelle regroupe des projets artistiques et culturels satisfaisant l’un des critères suivants : <br>
+                                <br>
+                                Utiliser le sport comme objet d’expression artistique ou comme thématique ;<br>
+                                Se tenir dans un lieu sportif ou en lien avec un événement sportif (après un match, un tournoi…) ;<br>
+                                Mettre en lumière les valeurs communes entre sport et culture (diversité culturelle, inclusion, universalisme, excellence).
+                                </span>
+                            </p>
+                            <button onclick="myFunction('dots3', 'more3', 'myBtn3')"  id="myBtn3">En savoir plus</button>
+                        </div>
+                    </div>
+                    <div class="slide" style="background-color: #f39c12;">
+                        <img src="image/env.png" alt="">
+                        <div>
+                            <h2>La voie est libre : profitez de la Corniche piétonnisée ce dimanche 19 novembre</h2>
+                            <p>"La Voie est libre" revient dimanche 19 novembre –  de 10h à 17h – sur la Corniche.
+                                Le dispositif, qui fait la part belle aux promeneurs et aux mobilités douces, est de retour pour sa dernière édition  de l'année 2023 . Lors de l'édition du mois d'octobre près de 30 000 Marseillaises et Marseillais sont venus profiter d'un littoral apaisé, piétonnisé, de la plage des Catalans jusqu'au parc Talabot.<span id="dots4">...</span><span id="more4">
+                                Animations culturelles, musicales et sportives seront au rendez-vous ainsi que des food-trucks et triporteurs pour se restaurer, sans oublier les artistes en déambulation.
+                                 En libérant cet axe fréquenté du bord de mer, la Ville de Marseille renforce son action en faveur d'un cadre de vie plus apaisé rendu aux Marseillaises et aux Marseillais.
+                                </span>
+                            </p>
+                            <button onclick="myFunction('dots4', 'more4', 'myBtn4')"  id="myBtn4">En savoir plus</button>
+                        </div>
+                    </div>
+                </div>
+                <button id="p" class="prev" onclick="prevSlide()"><i class="fa-solid fa-arrow-left"></i></button>
+                <button id="p" class="next" onclick="nextSlide()"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+        <div class="grid">
+            <a class="card" target="_blank" href="https://www.marseille.fr/environnement/actualites/la-voie-est-libre">
+                <img src="image/env.png" alt="">
+                <h3 class="env">ENVIRONNEMENT</h3>
+                <p>La voie est libre : profitez de
+                    la Corniche piétonnisée ce
+                    dimanche 19 novembre
+                </p>
+            </a>
+            <a class="card" target="_blank" href="https://www.marseille.fr/mairie/actualites/marseille-le-magazine-des-marseillaises-et-des-marseillais">
+                <img src="image/rest.png" alt="">
+                <h3 class="mai">MAIRIE</h3>
+                <p>Marseille - Le magazine des Marseillaises et des Marseillais</p>
+            </a>
+            <a class="card" target="_blank" href="https://www.marseille.fr/sports-loisirs/jeux-olympiques-et-paralympiques/la-ville-de-marseille-s-engage-pour-l-olympiade-culturelle">
+                <img src="image/sport.jpg" alt="">
+                <h3 class="spo">SPORTS-LOISIRS</h3>
+                <p>La Ville de Marseille s'engage pour l'Olympiade Culturelle</p>
+            </a>
+            <a class="card" target="_blank" href="">
+                <img src="image/nuit.png" alt="https://www.marseille.fr/prevention/actualites/la-ville-de-marseille-engagee-pour-la-prevention-des-risques-majeurs">
+                <h3 class="env">ENVIRONNEMENT</h3>
+                <p>La Ville de Marseille engagée pour la prévention des risques majeurs</p>
+            </a>
+            <a class="card" target="_blank" href="https://www.marseille.fr/mairie/actualites/marseille-celebre-la-journee-internationale-des-droits-de-l-enfant">
+                <img src="image/enfant.png" alt="">
+                <h3 class="mai">MAIRIE</h3>
+                <p>Marseille célèbre la Journée internationale des droits de l'enfant</p>
+            </a>
+            <a class="card" target="_blank" href="https://www.marseille.fr/education/actualites/rejoignez-le-conseil-marseillais-de-la-vie-etudiante">
+                <img src="image/etu.png" alt="">
+                <h3 class="edu">EDUCATION</h3>
+                <p>Rejoignez le Conseil marseillais de la vie étudiante, la Ville de Marseille vous donne la parole !</p>
+            </a>
+            <a class="card" target="_blank" href="https://www.marseille.fr/education/actualites/la-ville-de-marseille-poursuit-son-engagement-contre-la-precarite-etudiante">
+                <img src="image/repas.png" alt="">
+                <h3 class="edu">EDUCATION</h3>
+                <p>La Ville de Marseille poursuit son engagement contre la précarité étudiante</p>
+            </a>
+            <a class="card" target="_blank" href="https://www.marseille.fr/culture/actualites/baya-une-heroine-algerienne-de-l-art-moderne-au-centre-de-la-vieille-charite">
+                <img src="image/culture.png" alt="">
+                <h3 class="cul">CULTURE</h3>
+                <p>"Baya. Une héroïne algérienne de l'art moderne" au Centre de la Vieille Charité</p>
+            </a>
+        </div>
+    </section>
+
+    <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112674.99853240728!2d5.224761513828229!3d43.28036444457633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9bf4344da5333%3A0x40819a5fd970220!2sMarseille!5e1!3m2!1sfr!2sfr!4v1700139538735!5m2!1sfr!2sfr" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <form class="newsletter" action="">
+        <div class="box">
+            <div class="newslettertext">
+                <h2>Newsletter</h2>
+                <p>Inscrivez-vous à la newsletter pour recevoir l’actualité de la Ville de Marseille directement dans votre boîte mail !</p>
+            </div>
+            <div class="newsletteremail">
+                <input type="text" placeholder="Addresse mail" name="mail" required>
+            </div>
+            <div class="newslettersubmit">
+                <input type="submit" value="Je m'abonne">
+            </div>
+        </div>
+    </form>
+
+    <footer>
+        <h1>MARSEILLE</h1>
+    </footer>
+
+    <script src="slide.js"></script>
+    <script src="readmore.js"></script>
+</body>
+</html>

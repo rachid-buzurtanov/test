@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 26px;
+  background-color: #fff;
+}
+
+:root {
+  --bar-width: 50px;
+  --bar-height: 6px;
+  --menu-gap: 6px;
+  --foreground: rgba(109,74,44, 0.7);
+  --background: white;
+  --menu-margin: 8px;
+  --animation-timing: 200ms ease-in-out;
+  --menu-height: calc(var(--bar-height) * 3 + var(--menu-gap) * 2);
+}
+
+a::after,
+a::before,
+a{
+   text-decoration: none;
+}
+
+.menu {
+  --x-width: calc(var(--menu-height) * 1.41421356237);
+  display: flex;
+  flex-direction: column;
+  gap: var(--menu-gap);
+  width: max-content;
+  position: fixed;
+  top: var(--menu-margin);
+  left: var(--menu-margin);
+  z-index: 100;
+  cursor: pointer;
+}
+
+.menu:has(input:checked) {
+  --foreground: white;
+  --background: #333;
+}
+
+.menu:has(input:focus-visible)::before,
+.menu:has(input:focus-visible)::after,
+.menu input:focus-visible {
+  border: 1px solid var(--background);
+  box-shadow: 0 0 0 1px var(--foreground);
+}
+
+.menu::before,
+.menu::after,
+.menu input {
+  content: "";
+  width: var(--bar-width);
+  height: var(--bar-height);
+  background-color: var(--foreground);
+  border-radius: 9999px;
+  transform-origin: left center;
+  transition: opacity var(--animation-timing), width var(--animation-timing),
+   rotate var(--animation-timing), translate var(--animation-timing),
+   background-color var(--animation-timing);
+}
+
+.menu input {
+  appearance: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  pointer-events: none;
+}
+
+.menu:has(input:checked)::before {
+  rotate: 45deg;
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) / -2);
+}
+
+.menu:has(input:checked)::after {
+  rotate: -45deg;
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) / 2);
+}
+
+.menu input:checked {
+  opacity: 0;
+  width: 0;
+}
+
+.navbar {
+  transition: translate var(--animation-timing);
+  translate: -100%;
+  padding: 0.5rem 1rem;
+  padding-top: calc(var(--menu-height) + var(--menu-margin) + 1rem);
+  background-color: var(--foreground);
+  color: var(--background);
+  max-width: 18rem;
+  min-height: 100vh;
+}
+
+.menu:has(input:checked) + .navbar {
+  translate: 0;
+}
+
+.navbar header{
+   font-size: 22px;
+   color: white;
+   text-align: center;
+   line-height: 70px;
+   background-color: rgba(182, 152, 112, 0.7);
+}
+
+.nav-links a{
+   display: block;
+   height: 100%;
+   width: 100%;
+   line-height: 65px;
+   font-size: 20px;
+   color: white;
+   padding-left: 40px;
+   box-sizing: border-box;
+   border-top: 1px solid rgba(255, 255, 255, 0.1);
+   transition: 0.4s;
+}
+
+.nav-links li{
+   margin-left: -35px;
+}
+
+.nav-links{
+   list-style: none;
+}
+
+.link i{
+   padding-right: 50px;
+}
+
+.link:hover a{
+   padding-left: 60px;
+}
+
+.element{
+    height: 0;
+}
+
+footer h1{
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    font-weight: 900;
+    opacity: 0.7;
+    text-shadow: -5px 5px 0px #00e6e6ab, -10px 10px 0px #01ccccb2, -15px 15px 0px #00bdbda9;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    background-color: rgb(221, 228, 227);
+    position: relative;
+    isolation: isolate;
+}
+
+footer::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    opacity: 0.5;
+    background-image: url(../blason-marseille-removebg-preview2.png);
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
